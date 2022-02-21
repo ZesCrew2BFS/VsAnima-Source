@@ -230,7 +230,7 @@ class TitleState extends MusicBeatState
 			// music.play();
 
 			if(FlxG.sound.music == null) {
-				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+				FlxG.sound.playMusic(Paths.music('snf-sega'), 0);
 
 				FlxG.sound.music.fadeIn(4, 0, 0.7);
 			}
@@ -530,16 +530,21 @@ class TitleState extends MusicBeatState
 			{
 				case 1:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Psych Engine by'], 15);
+					createCoolText(['Mod by'], 15);
 					#else
 					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
 					#if PSYCH_WATERMARKS
-					addMoreText('Shadow Mario', 15);
-					addMoreText('RiverOaken', 15);
-					addMoreText('shubs', 15);
+					addMoreText('AnimaAnimatesYT', 15);
+					addMoreText('ZesCrew2', 15);
+					addMoreText('Waleed', 15);
+					addMoreText('Videobrain', 15);
+					addMoreText('RoseTheFrikiArtist', 15);
+					addMoreText('Arriators', 15);
+					addMoreText('Stuckmarcz', 15);
+					addMoreText('thefungang123', 15);
 					#else
 					addMoreText('present');
 					#end
@@ -552,12 +557,12 @@ class TitleState extends MusicBeatState
 				// credTextShit.screenCenter();
 				case 5:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Not associated', 'with'], -40);
+					createCoolText(['please subscribe', 'to'], -40);
 					#else
-					createCoolText(['In association', 'with'], -40);
+					createCoolText(['please subscribe', 'to'], -40);
 					#end
 				case 7:
-					addMoreText('newgrounds', -40);
+					addMoreText('AnimaAnimatesYT', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 8:
@@ -565,7 +570,7 @@ class TitleState extends MusicBeatState
 					ngSpr.visible = false;
 				// credTextShit.visible = false;
 
-				// credTextShit.text = 'Shoutouts Tom Fulp';
+				// credTextShit.text = 'Shoutouts to Waleed';
 				// credTextShit.screenCenter();
 				case 9:
 					createCoolText([curWacky[0]]);
@@ -579,13 +584,13 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('Friday');
+					addMoreText('FNF');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Night');
+					addMoreText('Vs Anima');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Version 3'); // credTextShit.text += '\nFunkin';
 
 				case 16:
 					skipIntro();
